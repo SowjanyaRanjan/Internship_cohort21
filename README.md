@@ -27,7 +27,7 @@ scikit‑learn (RobustScaler, train_test_split, LinearRegression)
 
 **How It Works**
 
-**Data Loading**
+**1) Data Loading**
 
  Load the cleaned housing data CSV file.
  Keep only the required columns: total_sqft, bath, balcony, and price.
@@ -35,8 +35,7 @@ scikit‑learn (RobustScaler, train_test_split, LinearRegression)
 Add a new feature distance_metro using random integers between 200 and 5000 to represent distance to the nearest metro in meters.
 This feature reflects how connectivity can influence house prices.
 ​
-
-**Exploratory Data Analysis (EDA)**
+**2) Exploratory Data Analysis (EDA)**
 
 Inspect the shape and first few rows of the dataset.
 Use the IQR (Interquartile Range) method to detect outliers in all numeric columns.
@@ -44,20 +43,20 @@ Plot boxplots for each feature to visually inspect outliers.
 Plot a Bar chart of mean values to get a quick overview of the data distribution.
 ​
 
-**Preprocessing and Splitting**
+
 
 Define X as the input features: total_sqft, bath, balcony, distance_metro.
 Define y as the target variable: price.
 Use RobustScaler to scale the features, which handles outliers better by using median and IQR instead of mean and standard deviation.​
 Split the data into training and testing sets (80% train, 20% test) using train_test_split.
 
-**Model Training and Evaluation**
+**3) Model Training and Evaluation**
 
 Train a LinearRegression model on the scaled training data.
 Print the feature coefficients to understand how each feature affects the estimated price.
 Calculate the R² score on the test set to measure how well the model explains the variation in prices. Similar house price estimation models often use R² as the main performance metric.
-
-****User Interaction and Estimation***
+**
+**4) User Interaction and Estimation**
 
 Take user input from the console for:
 Square footage
