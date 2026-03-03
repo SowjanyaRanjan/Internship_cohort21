@@ -55,7 +55,7 @@ Split the data into training and testing sets (80% train, 20% test) using train_
 Train a LinearRegression model on the scaled training data.
 Print the feature coefficients to understand how each feature affects the estimated price.
 Calculate the R² score on the test set to measure how well the model explains the variation in prices. Similar house price estimation models often use R² as the main performance metric.
-**
+
 **4) User Interaction and Estimation**
 
 Take user input from the console for:
