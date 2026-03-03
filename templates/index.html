@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Affordable House Price Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Affordable House Price Predictor</h1>
+    <p>Enter House Details</p>
+
+    <form action="/predict" method="post">
+
+        <label>Enter Square Footage</label>
+        <input type="number" name="sqft" placeholder="1000" required>
+
+        <label>Enter Number of Bathrooms</label>
+        <input type="number" name="bath" placeholder="1" required>
+
+        <label>Enter Number of Balconies</label>
+        <input type="number" name="balcony" required>
+        <label>Distance to Metro (meters)</label>
+        <input type="number" name="distance" placeholder="500" required>
+        <button type="submit">Predict Price</button>
+    </form>
+
+    {% if prediction_text is defined %}
+    <div class="result">
+        <h2>Prediction Result</h2>
+        <p>Predicted Price (Lakhs): {{ prediction_text }}</p>
+        <p>Predicted Price (Rupees): {{ rupees }}</p>
+        <div class="status {{ status }}">
+            Status: {{ status }}
+        </div>
+    </div>
+    {% endif %}
+
+</div>
+
+</body>
+</html>
