@@ -1,4 +1,5 @@
-Project Description
+House Price Prediction – 
+Readme file - UI/UX Implementation
 
 This project predicts house prices using a trained Machine Learning model.
 The model takes inputs like square footage, number of bathrooms, balconies, and distance to metro, and displays the predicted price through a Streamlit web interface.
