@@ -1,6 +1,6 @@
 (Evaluators)
- YASHWANTH ASHOK
- VISHNU R NAIR
+ YASHWANTH ASHOK,
+ VISHNU R NAIR,
  MANAV MAHESH
 
   Observations:
@@ -13,6 +13,6 @@
 
  Outcome: 
 
- R² score improved than before.
- Model accuracy increased.
+ R² score improved than before,
+ Model accuracy increased,
  Predictions became more stable and realistic.
