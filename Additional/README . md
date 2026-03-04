@@ -1,1 +1,50 @@
+Project Description
 
+This project predicts house prices using a trained Machine Learning model.
+The model takes inputs like square footage, number of bathrooms, balconies, and distance to metro, and displays the predicted price through a Streamlit web interface.
+ Features
+Predict house prices using trained ML model
+Interactive web interface using Streamlit
+User-friendly number input fields
+Displays predicted price in Lakhs and Rupees
+Shows affordability status (Affordable / Expensive)
+
+Technologies Used
+Python
+Streamlit
+NumPy
+Pickle
+Scikit-learn (for model training)
+VS Code (for development)
+
+ Project Structure
+house-price-project/
+│
+├── app.py
+├── house_price_model.pkl
+├── Data_Cleaned.csv
+└── README.md
+Installation Steps
+Clone the repository
+git clone <repository_link>
+Go to the project folder
+cd house-price-project
+Install dependencies
+pip install streamlit numpy scikit-learn
+Run the application
+streamlit run app.py
+
+How to Use
+Run the application using Streamlit.
+The browser will open automatically.
+Enter:
+Square Footage
+Number of Bathrooms
+Number of Balconies
+Distance to Metro
+Click Predict Price.
+
+The system displays:
+Predicted Price (Lakhs)
+Predicted Price (Rupees)
+Status (Affordable / Expensive)
